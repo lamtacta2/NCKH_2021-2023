@@ -1,0 +1,8 @@
+<launch>
+   <rosparam file="$(find servo)/config/params.yaml" command="load"/>
+    <node name="server_endpoint" pkg="ros_tcp_endpoint" type="default_server_endpoint.py" args="--wait" output="screen" respawn="true" />
+    <node name="Arduino_ros" pkg="rosserial_python" type="serial_node.py" args="/dev/ttyACM0" output="screen" respawn="true" />
+    <node name="Center" pkg="servo" type="Center.py" args="--wait" output="screen" respawn="true" />
+    <node name="Saves" pkg="servo" type="save.py" args="--wait" output="screen" respawn="true" />
+    <node name="Controller" pkg="servo" type="controller.py" args="--wait" output="screen" respawn="true" />
+</launch>

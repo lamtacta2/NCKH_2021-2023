@@ -1,0 +1,4 @@
+sudo chmod a+rw /dev/ttyACM0
+source devel/setup.bash
+roslaunch servo servo.launch
+rosrun rosserial_python serial_node.py /dev/ttyUSB0
