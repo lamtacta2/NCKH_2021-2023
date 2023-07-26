@@ -1,0 +1,5 @@
+1. 184 Hz --> 50-100 Hz
+
+2. Vẽ sơ đồ (Hàm dữ liệu hệ thống mở)
+
+3. Điều khiển riêng từng động cơ
